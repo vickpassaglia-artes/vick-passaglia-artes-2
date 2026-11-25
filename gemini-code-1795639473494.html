@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vick Passaglia Artes — Criar • Ensinar • Compartilhar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#inicio" class="brand">
+        <span class="monogram">VP</span>
+        <div class="brand-text">
+          <strong>Vick Passaglia</strong>
+          <small>A R T E S</small>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menu" id="menuToggle">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#sobre">Minha Essência</a>
+        <a href="#galeria">Galeria & Processos</a>
+        <a href="#laboratorio">Cores & Texturas</a>
+        <a href="#bate-papo" class="btn-nav">Roda de Bate-Papo</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="pill-tag">Criar • Ensinar • Compartilhar</span>
+        <h1>A arte ganha vida quando é <em>sentida</em> e <em>compartilhada</em>.</h1>
+        <p>
+          Bem-vindo ao meu ateliê digital! Um espaço leve, alegre e curioso para explorar
+          a escultura em argila, a pintura, o artesanato e a alegria de descobrir novas texturas com as próprias mãos.
+        </p>
+        <div class="hero-actions">
+          <a href="#galeria" class="btn-primary">Explorar Minhas Artes</a>
+          <a href="#bate-papo" class="btn-secondary">Entrar no Bate-Papo</a>
+          <a id="heroWhatsappBtn" href="https://wa.me/5511999999999?text=Ol%C3%A1%20Vick!%20Vi%20seu%20site%20de%20artes%20e%20queria%20trocar%20uma%20ideia!" target="_blank" rel="noopener" class="btn-whatsapp">
+            💬 WhatsApp do Ateliê
+          </a>
+        </div>
+        <p class="handwritten-note">“Mais do que ensinar técnicas, é construir juntos novas possibilidades.” ♥</p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-frame main-photo">
+          <img src="img/atelie-escultura.jpg" alt="Vick Passaglia esculpindo em argila no ateliê" onerror="this.src='https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80'">
+          <span class="photo-caption">No ateliê: dando forma à argila</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Arte • Pessoas • Natureza</span>
+        <h2>O que move minhas mãos</h2>
+        <p>
+          Sou apaixonada pela natureza, pelos processos manuais e pela transformação que cada material oferece.
+          Aqui dividimos descobertas sem medo de errar — celebrando cada traço, cada relevo e cada troca.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <article class="pillar-card">
+          <div class="pillar-icon">🎨</div>
+          <h3>Curiosidade & Experimentação</h3>
+          <p>Misturar pigmentos, testar argilas, sentir a madeira e descobrir o que acontece quando saímos do óbvio.</p>
+        </article>
+        <article class="pillar-card">
+          <div class="pillar-icon">👐</div>
+          <h3>Fazer Manual com Leveza</h3>
+          <p>O artesanato e a escultura como ferramentas de presença, alegria e expressão genuína.</p>
+        </article>
+        <article class="pillar-card">
+          <div class="pillar-icon">💬</div>
+          <h3>Ensinar & Trocar</h3>
+          <p>Aprender juntos em comunidade, dividindo dicas de bancada, inspirações e histórias reais.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Portfólio & Bastidores</span>
+        <h2>Galeria de Criações e Experimentos</h2>
+        <p>Filtre por linguagem artística e clique nas obras para ver detalhes dos materiais e processos.</p>
+      </div>
+
+      <div class="filter-bar" role="tablist">
+        <button class="filter-btn active" data-filter="todos">Tudo</button>
+        <button class="filter-btn" data-filter="escultura">Escultura & Argila</button>
+        <button class="filter-btn" data-filter="pintura">Pintura & Paisagens</button>
+        <button class="filter-btn" data-filter="artesanato">Artesanato & Processos</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="art-card" data-category="escultura" data-title="Estudo Anatômico em Argila" data-desc="Modelagem de expressão facial utilizando argila terracota e cinza, observação direta no espelho e ferramentas de madeira.">
+          <img src="img/estudo-argila.jpg" alt="Mãos modelando rosto em argila" onerror="this.src='https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80'">
+          <div class="art-info">
+            <span class="art-tag">Escultura & Argila</span>
+            <h3>Estudo Anatômico em Argila</h3>
+            <p>Textura orgânica e modelagem à mão livre.</p>
+          </div>
+        </div>
+
+        <div class="art-card" data-category="pintura" data-title="Paisagens & Luz Natural" data-desc="Estudos de paisagens em óleo e acrílica explorando verdes terrosos, luz da manhã e profundidade atmosférica.">
+          <img src="img/atelie-pintura.jpg" alt="Pinturas de paisagens e retratos no ateliê" onerror="this.src='https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80'">
+          <div class="art-info">
+            <span class="art-tag">Pintura & Paisagens</span>
+            <h3>Paisagens & Luz Natural</h3>
+            <p>Diálogo entre natureza, cor e pinceladas soltas.</p>
+          </div>
+        </div>
+
+        <div class="art-card" data-category="artesanato" data-title="Ferramentas & Texturas de Bancada" data-desc="Exploração de estecas, pincéis, esponjas e suportes naturais para criar relevos únicos em peças artesanais.">
+          <img src="img/atelie-escultura.jpg" alt="Ferramentas de escultura e artesanato" onerror="this.src='https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=800&q=80'">
+          <div class="art-info">
+            <span class="art-tag">Artesanato & Processos</span>
+            <h3>Ferramentas & Texturas</h3>
+            <p>O encanto dos detalhes feitos com calma e curiosidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="laboratorio" class="lab-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Explorador Sensorial</span>
+        <h2>Paleta & Texturas do Ateliê</h2>
+        <p>Clique em cada cor ou textura para explorar combinações e despertar ideias de criação:</p>
+      </div>
+
+      <div class="lab-container">
+        <div class="swatches-grid">
+          <button class="swatch-btn active" style="--swatch:#B86E4B" data-name="Terracota" data-note="O calor da argila e do barro. Traz energia, acolhimento e presença para esculturas e peças artesanais.">
+            <span class="swatch-circle"></span>
+            <strong>Terracota</strong>
+          </button>
+          <button class="swatch-btn" style="--swatch:#6B7F3B" data-name="Verde Oliva & Musgo" data-note="Inspiração botânica e natural. Combina com fibras cruas, madeira e estudos ao ar livre.">
+            <span class="swatch-circle"></span>
+            <strong>Verde Oliva</strong>
+          </button>
+          <button class="swatch-btn" style="--swatch:#E2A83B" data-name="Ocre & Siena" data-note="Luz solar, alegria e vitalidade. Ótima para aquecer composições e destacar detalhes.">
+            <span class="swatch-circle"></span>
+            <strong>Ocre / Siena</strong>
+          </button>
+          <button class="swatch-btn" style="--swatch:#E6D6B8" data-name="Areia & Papel Texturizado" data-note="Leveza tátil e respiro visual. Valoriza relevos, pinceladas soltas e acabamentos naturais.">
+            <span class="swatch-circle"></span>
+            <strong>Areia</strong>
+          </button>
+          <button class="swatch-btn" style="--swatch:#4E2F1E" data-name="Marrom & Terra Profunda" data-note="Raiz, profundidade e contraste acolhedor para emoldurar cores mais vibrantes.">
+            <span class="swatch-circle"></span>
+            <strong>Marrom</strong>
+          </button>
+        </div>
+
+        <div class="swatch-display" id="swatchDisplay">
+          <div class="swatch-preview" id="swatchPreview" style="background-color: #B86E4B;"></div>
+          <div>
+            <h3 id="swatchTitle">Terracota</h3>
+            <p id="swatchNote">O calor da argila e do barro. Traz energia, acolhimento e presença para esculturas e peças artesanais.</p>
+            <button class="btn-inspire" id="btnInspire">✨ Gerar Desafio Criativo do Dia</button>
+            <p class="creative-prompt" id="creativePrompt"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bate-papo" class="chat-section">
+    <div class="container chat-grid">
+      <div class="chat-form-box">
+        <span class="subtitle">Ateliê Aberto</span>
+        <h2>Deixe sua Ideia ou Dúvida Criativa</h2>
+        <p>Quer trocar experiências sobre materiais, sugerir uma textura ou conversar sobre arte? Escreva aqui!</p>
+
+        <form id="chatForm">
+          <label for="authorName">Seu nome</label>
+          <input type="text" id="authorName" placeholder="Ex.: Marina, Lucas..." maxlength="60" required />
+
+          <label for="topicTag">Tema da conversa</label>
+          <select id="topicTag">
+            <option value="💡 Ideia de Criação">💡 Ideia de Criação</option>
+            <option value="🏺 Dúvida sobre Materiais & Argila">🏺 Dúvida sobre Materiais & Argila</option>
+            <option value="🎨 Cores & Texturas">🎨 Cores & Texturas</option>
+            <option value="☕ Bate-papo Livre">☕ Bate-papo Livre</option>
+          </select>
+
+          <label for="messageText">Sua mensagem</label>
+          <textarea id="messageText" rows="4" placeholder="Conte o que você está criando ou o que gostaria de experimentar..." maxlength="500" required></textarea>
+
+          <div class="form-buttons">
+            <button type="submit" class="btn-primary">Publicar no Mural</button>
+            <a id="formWhatsappBtn" href="https://wa.me/5511999999999?text=Ol%C3%A1%20Vick!%20Gostaria%20de%20conversar%20sobre%20artes%20e%20materiais." target="_blank" rel="noopener" class="btn-whatsapp">
+              💬 Falar no WhatsApp
+            </a>
+            <a href="https://instagram.com/vickpassaglia" target="_blank" rel="noopener" class="btn-secondary">Instagram</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="chat-wall-box">
+        <div class="wall-header">
+          <h3>Mural de Trocas & Inspirações</h3>
+          <span class="badge-live" id="syncBadge">● Modo Local</span>
+        </div>
+        <div class="messages-list" id="messagesList"></div>
+      </div>
+    </div>
+  </section>
+
+  <a id="floatingWhatsapp" href="https://wa.me/5511999999999?text=Ol%C3%A1%20Vick!%20Vim%20pelo%20site%20Vick%20Passaglia%20Artes%20e%20adorei%20as%20cria%C3%A7%C3%B5es!" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Conversar no WhatsApp">
+    💬
+  </a>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Vick Passaglia Artes</strong>
+        <p>Criar • Ensinar • Compartilhar — Feito com amor, curiosidade e mãos na massa.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://instagram.com/vickpassaglia" target="_blank" rel="noopener">@vickpassaglia</a>
+        <a href="#inicio">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="artModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
+      <img id="modalImg" src="" alt="" />
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
